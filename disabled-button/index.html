@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>The button disabled attribute</h1>
+  <button id="btn" type="button" disabled>Click Me!</button>
+  <script>
+    // Should not be possible to click
+    document.getElementById('btn').addEventListener('click', () => {
+      const element = document.createElement('span')
+      element.innerText = "Button clicked"
+      document.body.appendChild(element)
+    })
+  </script>
+</body>
+</html>
